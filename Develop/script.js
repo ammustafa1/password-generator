@@ -1,6 +1,5 @@
 function generatePassword() {
 
-  // Prompts user for password length and checks if the input was a number
   var userInput = window.prompt("Password Length?");
   var passwordLength = parseInt(userInput, 10);
   if (isNaN(passwordLength)) {
@@ -62,7 +61,6 @@ var generateBtn = document.querySelector("#generate");
 function passwordOutput() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 }
 
